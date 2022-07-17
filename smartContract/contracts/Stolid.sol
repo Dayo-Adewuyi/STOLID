@@ -1,21 +1,15 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
-import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol";
+import "@openzeppelin/contracts/security/Pausable.sol";
 
-contract Stolid is Initializable, PausableUpgradeable, UUPSUpgradeable {
-    /// @custom:oz-upgrades-unsafe-allow constructor
+contract Stolid is Pausable {
+    
     constructor() {
-        _disableInitializers();
+        
+        chiefJustice = msg.sender;
     }
 
-    function initialize() public initializer {
-        chiefJustice = msg.sender;
-        __Pausable_init();
-        __UUPSUpgradeable_init();
-    }
 
     function pause() public onlyChiefJustice {
         _pause();
@@ -25,11 +19,7 @@ contract Stolid is Initializable, PausableUpgradeable, UUPSUpgradeable {
         _unpause();
     }
 
-    function _authorizeUpgrade(address newImplementation)
-        internal
-        override
-        onlyChiefJustice
-    {}
+    
 
     uint fileId;
 
