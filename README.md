@@ -1,17 +1,21 @@
-## STOLID
+### TEAM NAME
 
-A decentralized file management and workspace for the Judiciary
+Team Conquistadors
 
+### TEAM MEMBER
+Dayo Adewuyi
 
 ### Problem
 
-The  way courts operates in Nigeria encourages corruption, this led to a weak justice system that is currently obtainable and lack of faith in the judiciary by the public.
+The  way courts operates in Nigeria encourages corruption, this led to the weak justice system that is currently obtainable and lack of faith in the judiciary by the public.
 
-Case Files are constantly stolen/destroyed  by criminals and faux database hack claims are sometimes made by corrupt officials.
+Case Files are constantly stolen/destroyed  by criminals and faux database hack claims are sometimes made by corrupt officials, which is not in tandem with sustainable development goal 16  
 
 
 ### Solution
-The solution is STOLID, a decentralized file management and workspace for the judiciary. This would enable countries meet the SUSTAINABLE DEVELOPMENT GOAL which is to promote peace, justice and strong institutions.
+
+
+The solution is STOLID, a decentralized file management and workspace for the judiciary. This would enable countries meet the SUSTAINABLE DEVELOPMENT GOAL 16 which is to ensure public access to information and protect fundamental freedoms, in accordance with national legislation and international agreements. 
 
 Stolid allows court cases to be stored in a safe and secured manner by leveraging the use of IPFS, It also enables any member of the public access to closed records in line with the FREEDOM OF INFORMATION law. 
 
@@ -71,9 +75,21 @@ The two-part demo can be found below;
 
 [![STOLID](https://cdn.loom.com/sessions/thumbnails/a85e83aa175c4ae6a39ecbfd3f4c5ac0-1658165827134-with-play.gif)](https://www.loom.com/share/c8051d45310545c7a8cf1dd8e94e3ae1)
 
+### THE CODEBASE
 
+The codebase is divided into two section, the smart contract and front-end. The smart-contract was created using hardhat and front-end with React.js
 
+### HOW TO RUN
 
+```
+git clone https://github.com/Dayo-Adewuyi/STOLID
+````
+```
+npm install
+````
+```
+npm start
+````
 ### ROADMAP
 - Filtering of closed case files by states/countries.
 - Live onchain editing environment for clerks
