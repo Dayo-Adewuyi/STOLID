@@ -62,6 +62,8 @@ The smart contract is deployed to Ropsten  Network
 
 -DEMO: 
 [![STOLID](https://cdn.loom.com/sessions/thumbnails/a85e83aa175c4ae6a39ecbfd3f4c5ac0-1658165827134-with-play.gif)](https://www.loom.com/share/a85e83aa175c4ae6a39ecbfd3f4c5ac0)
+
+
 -DEMO2
 [![STOLID](https://cdn.loom.com/sessions/thumbnails/a85e83aa175c4ae6a39ecbfd3f4c5ac0-1658165827134-with-play.gif)](https://www.loom.com/share/c8051d45310545c7a8cf1dd8e94e3ae1)
 
