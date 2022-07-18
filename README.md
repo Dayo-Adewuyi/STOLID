@@ -35,26 +35,22 @@ Some of the current features of STOLID:
 - React.js - The frontend is built with React.js
 - Alchemy - Alchemy broadcasts the dapp
 - IPFS - IPFS is used to store files
-- Polygon - The smart contracts are deployed to Polygon Mumbai
+- Rops - The smart contracts are deployed to Ropsten testnet 
 - Login with Unstoppable
 
 ### Deployments
 
 The smart contract is deployed to Polygon Mumbai Network
-Live link: https://ox-spence.vercel.app/
-DEMO: https://youtu.be/15ZNA9SSA1Y
+Live link: https://stolid.vercel.app
+DEMO: https://www.loom.com/share/a85e83aa175c4ae6a39ecbfd3f4c5ac0
+DEMO2: https://www.loom.com/share/c8051d45310545c7a8cf1dd8e94e3ae1
+contract address: https://ropsten.etherscan.io/address/0xb999298dc5e02cc03a063b7960a7bfbd31d8deda
 
 
-# STOLID
-A dapp that enables transparent and efficient file management system for the Judiciary to meet SDG 16
-
-### DEMO
-
-A demo of the app can be viewed on the link below
-https://www.loom.com/share/a85e83aa175c4ae6a39ecbfd3f4c5ac0
 
 
-https://www.loom.com/share/c8051d45310545c7a8cf1dd8e94e3ae1
 
-### WEBSITE
-https://stolid.vercel.app
+
+
+
+
