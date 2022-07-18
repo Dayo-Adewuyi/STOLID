@@ -60,9 +60,10 @@ The smart contract is deployed to Ropsten  Network
 
 -Live link: https://stolid.vercel.app
 
--DEMO: https://www.loom.com/share/a85e83aa175c4ae6a39ecbfd3f4c5ac0
-[![STOLID](https://cdn.loom.com/sessions/thumbnails/c8051d45310545c7a8cf1dd8e94e3ae1-with-play.gif)](https://www.loom.com/share/a85e83aa175c4ae6a39ecbfd3f4c5ac0)
--DEMO2: https://www.loom.com/share/c8051d45310545c7a8cf1dd8e94e3ae1
+-DEMO: 
+[![STOLID](https://cdn.loom.com/sessions/thumbnails/a85e83aa175c4ae6a39ecbfd3f4c5ac0-1658165827134-with-play.gif)](https://www.loom.com/share/a85e83aa175c4ae6a39ecbfd3f4c5ac0)
+-DEMO2
+[![STOLID](https://cdn.loom.com/sessions/thumbnails/a85e83aa175c4ae6a39ecbfd3f4c5ac0-1658165827134-with-play.gif)](https://www.loom.com/share/c8051d45310545c7a8cf1dd8e94e3ae1)
 
 -contract address: https://ropsten.etherscan.io/address/0xb999298dc5e02cc03a063b7960a7bfbd31d8deda
 
