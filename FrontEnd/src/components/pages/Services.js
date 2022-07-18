@@ -12,9 +12,19 @@ const {currentAccount, fetchClosedCases}= useContext(ConnectContext)
 const [query, setQuery] = useState("")
 const [data, setData] = useState([])
 
+const fetch = async() =>{
+  const tx = await fetchClosedCases()
+       setData(tx)
+
+}
+
+useEffect(() => {fetch()
+  }, [data])
 
 
   return(
+    <>
+    { currentAccount ? (
     <div >
       <div className="header__searchContainer">
                 <div className="header__searchBar">
@@ -25,7 +35,7 @@ const [data, setData] = useState([])
             </div>
      
       
-      {data.filter(post => {
+      {data?.filter(post => {
         if (query === ""){
           return post
         }else if (post.caseId.toLowerCase().includes(query.toLowerCase())){
@@ -43,6 +53,11 @@ const [data, setData] = useState([])
         
       }
       
-    </div>
+    </div>) : (
+      <div>
+        <h1>PLEASE CONNECT WALLET TO VIEW RECORD</h1>
+      </div>
+    )}
+    </>
   ) ;
 }

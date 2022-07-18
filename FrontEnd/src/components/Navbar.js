@@ -54,13 +54,9 @@ function Navbar() {
               </Link>
             </li>
             <li className='nav-item'>
-              <Link
-                to='/sign-up'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Staff
-              </Link>
+              
+                <a className = 'nav-links' href="https://stolid-staff-portal.vercel.app/" >Staff Portal</a>
+              
             </li>
 
             <li>

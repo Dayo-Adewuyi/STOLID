@@ -75,3 +75,10 @@
   color: #fff;
   font-size: 100px;
 }
+.cards__item {
+  margin: 2rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-item: center;
+  justify-content: center;
+}
