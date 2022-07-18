@@ -59,15 +59,19 @@ Some of the current features of STOLID:
 The smart contract is deployed to Ropsten  Network
 
 -Live link: https://stolid.vercel.app
+-contract address: https://ropsten.etherscan.io/address/0xb999298dc5e02cc03a063b7960a7bfbd31d8deda
 
--DEMO: 
+#### DEMOS
+
+The two-part demo can be found below;
+
 [![STOLID](https://cdn.loom.com/sessions/thumbnails/a85e83aa175c4ae6a39ecbfd3f4c5ac0-1658165827134-with-play.gif)](https://www.loom.com/share/a85e83aa175c4ae6a39ecbfd3f4c5ac0)
 
 
--DEMO2
+
 [![STOLID](https://cdn.loom.com/sessions/thumbnails/a85e83aa175c4ae6a39ecbfd3f4c5ac0-1658165827134-with-play.gif)](https://www.loom.com/share/c8051d45310545c7a8cf1dd8e94e3ae1)
 
--contract address: https://ropsten.etherscan.io/address/0xb999298dc5e02cc03a063b7960a7bfbd31d8deda
+
 
 
 ### ROADMAP
