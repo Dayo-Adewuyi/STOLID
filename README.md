@@ -1,6 +1,6 @@
 ## STOLID
 
-**Decentralized file management and workspace for the Judiciary
+A decentralized file management and workspace for the Judiciary
 
 
 ### Problem
@@ -13,13 +13,13 @@ Case Files are constantly stolen by criminals and corrupt court officials claim 
 ### Solution
 The solution built is a decentralized file management and workspace for the judiciary. This would enable countried meet the SUSTAINABLE DEVELOPMENT GOAL !^ which is to promote peace, justice and strong institutions.
 
-Stolid allows court cases to be stored in a safe and secured manner 
+Stolid allows court cases to be stored in a safe and secured manner by leveraging the use of IPFS, It also enables any member of the public access to closed records in line with the FREEDOM OF INFORMATION law. 
 
-Users can access the platform from any region/country in the world without any fear of deplatforming or sale of information to third parties because the core and main features of the platform are smart contracts written and deployed to the blockchain network.
+Stolid also enables clerks, registrars, judges and the chief justice perform their various functions without fear or interference. As it provides a secured trail of the various cases from inception till conclusion.
 
 
 
-Some of the current features of OxSpence:
+Some of the current features of STOLID:
 
 - Upload Files
 - Share with wallet address/ENS/Unstoppable domains
