@@ -83,6 +83,8 @@ The codebase is divided into two section, the smart contract and front-end. The 
 
 ```
 git clone https://github.com/Dayo-Adewuyi/STOLID
+
+git clone https://github.com/Dayo-Adewuyi/STOLID-STAFF-PORTAL
 ````
 ```
 npm install
