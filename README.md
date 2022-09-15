@@ -2,7 +2,7 @@
 
 ### Problem
 
-The  way courts operates in Nigeria encourages corruption, this led to the weak justice system that is currently obtainable and lack of faith in the judiciary by the public.
+The  way courts operates in Nigeria encourages corruption, this has led to a weak justice system that is currently obtainable and lack of faith in the judiciary by the public.
 
 Case Files are constantly stolen/destroyed  by criminals and faux database hack claims are sometimes made by corrupt officials, which is not in tandem with sustainable development goal 16  
 
