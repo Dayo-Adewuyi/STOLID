@@ -47,7 +47,7 @@ useEffect(() => {fetch()
         src={file}
         text={post.caseId}
         label='Mystery'
-        path={`https://ipfs.infura.io/ipfs/${post.fileHash}`}
+        path={`https://ipfs.io/ipfs/${post.fileHash}`}
       />
       ))
         
