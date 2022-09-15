@@ -1,9 +1,4 @@
-### TEAM NAME
-
-Team Conquistadors
-
-### TEAM MEMBER
-Dayo Adewuyi
+# STOLID
 
 ### Problem
 
@@ -55,12 +50,12 @@ Some of the current features of STOLID:
 - React.js - The frontend is built with React.js
 - Alchemy - Alchemy broadcasts the dapp
 - IPFS - IPFS is used to store files
-- Rops - The smart contracts are deployed to Ropsten testnet 
-- Login with Unstoppable
+- CoinBase Wallet - Users can connect to the dapp with the coinbase
+- Tenderly - For sending alerts to the discord group when an event is emitted
 
 ### Deployments
 
-The smart contract is deployed to Ropsten  Network
+The smart contract is deployed to Goerli  Network
 
 -Live link: https://stolid.vercel.app
 -contract address: https://goerli.etherscan.io/address/0xd89944cf0c4afb178340C804A525a615B13Ae608#code
@@ -84,7 +79,6 @@ The codebase is divided into two section, the smart contract and front-end. The 
 ```
 git clone https://github.com/Dayo-Adewuyi/STOLID
 
-git clone https://github.com/Dayo-Adewuyi/STOLID-STAFF-PORTAL
 ````
 ```
 npm install
