@@ -19,14 +19,14 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
-module.exports = {  
-  solidity: "0.8.4",  
-  networks:{
-    ropsten:{
-      accounts:[process.env.key],
-      url:process.env.url
+module.exports = {
+  solidity: "0.8.4",
+  networks: {
+    goerli: {
+      accounts: [process.env.key],
+      url: process.env.url
     }
-    
+
   },
   etherscan: {
     // Your API key for Etherscan

@@ -14,12 +14,12 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
-  const Greeter = await hre.ethers.getContractFactory("Stolid");
-  const greeter = await Greeter.deploy();
+  const Stolid = await hre.ethers.getContractFactory("Stolid");
+  const stolid = await Stolid.deploy();
 
-  await greeter.deployed();
+  await stolid.deployed();
 
-  console.log("nft deployed to:", greeter.address);
+  console.log("contract deployed to:", stolid.address);
 
   
 

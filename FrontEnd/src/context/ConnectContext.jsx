@@ -3,11 +3,6 @@ import React, { useEffect, useState } from "react";
 import { ethers, Contract, providers } from "ethers";
 import abi from "../constants/abi.json";
 import CoinbaseWalletSDK from '@coinbase/wallet-sdk';
-import WalletConnectProvider from '@walletconnect/web3-provider';
-import Web3Modal from "web3modal"
-import * as UAuthWeb3Modal from '@uauth/web3modal'
-import UAuthSPA from '@uauth/js'
-
 
 
 
@@ -43,98 +38,48 @@ const fetchClosedCases = async() => {
 
 
 export const ConnectProvider = ({ children }) =>{
-  const [web3Modal, setWeb3Modal] = useState(null)
+ 
   const [connectedWallet, setConnectedWallet] = useState(false);
   const [currentAccount, setCurrentAccount] = useState("")
+  const [provider, setProvider] = useState();
+  const [chainId, setChainId] = useState()
+  const [error, setError] = useState("")
   
  
-  const uauthOptions = {
-    clientID: '68ee4d6b-dabe-48e1-a6ed-9f7b907eca13',
-    redirectUri: 'https://ox-spence.vercel.app/',
-    
-  
-    // Must include both the openid and wallet scopes.
-    scope: 'openid wallet',
-  }
+ 
 
-
-  useEffect(() => {
-   const providerOptions = {
-     binancechainwallet: {
-       package: true },
-       'custom-uauth': {
-        // The UI Assets
-        display: UAuthWeb3Modal.display,
-    
-        // The Connector
-        connector: UAuthWeb3Modal.connector,
-    
-        // The SPA libary
-        package: UAuthSPA,
-    
-        // The SPA libary options
-        options: uauthOptions,
-      },
-     walletconnect: {
-       package: WalletConnectProvider,
-       options: {
-         infuraId: 'f310138e40fd41378ef72775877c5e7c' } }, walletlink:{ 
-           package: CoinbaseWalletSDK, 
-         options: {
-         appName: "Boon", 
-         infuraId: "f310138e40fd41378ef72775877c5e7c", 
-         rpc: "", 
-         chainId: 5, 
-         appLogoUrl: null, 
-         theme: "dark"
-       }
-       },
-   };
-   
-   const newWeb3Modal = new Web3Modal({
-     cacheProvider: true, // very important
-     network: "ropsten",
-     providerOptions,
-   });
-
-   UAuthWeb3Modal.registerWeb3Modal(newWeb3Modal)
-   setWeb3Modal(newWeb3Modal)
- }, [])
- useEffect(() => {
-   // connect automatically and without a popup if user is already connected
-   if(web3Modal && web3Modal.cachedProvider){
-     connectWallet()
-   }
- }, [web3Modal])
-
-
-
- async function connectWallet() {
-   try{
-    const provider = await web3Modal.connect();
-   addListeners(provider);
-   const ethersProvider = new providers.Web3Provider(provider)
-   const userAddress = await ethersProvider.getSigner().getAddress()
-   setCurrentAccount(userAddress)
-   setConnectedWallet(true)
-  }catch(error){
-    console.log(error)
-  }
+ const getProvider = () => {
+  const coinbaseWallet = new CoinbaseWalletSDK({
+    appName: "STOLID",
+    appLogoUrl: "https://unsplash.com/photos/CILlSJfgmVI"
+  });
+  return coinbaseWallet.makeWeb3Provider();
  }
 
- 
- 
- async function addListeners(web3ModalProvider) {
+ const connectWallet = async () => {
+  try {
+    const provider = getProvider();
+    setProvider(provider);
+    // Get accounts for connected wallet
+    const accounts = await provider.request({
+      method: "eth_requestAccounts"
+    });
+    if (accounts) {
+      setCurrentAccount(accounts[0]);
+      setConnectedWallet(true)
+    }
+    // Get current chain ID for connected wallet
+    const chainId = await provider.request({
+      method: "eth_chainId"
+    });
+    setChainId(Number(chainId));
+  } catch (error) {
+    setError(error);
+  }
+}
 
-   web3ModalProvider.on("accountsChanged", (accounts) => {
-     window.location.reload()
-   });
-   
-   // Subscribe to chainId change
-   web3ModalProvider.on("chainChanged", (chainId) => {
-     window.location.reload()
-   });
- }
+
+
 
   
     
